@@ -7,7 +7,7 @@ RUN apt-get -qq update > /dev/null &&\
     apt-get -qq -y --no-install-recommends install wget unzip > /dev/null &&\
     # Jorani installation
     rm -Rf /var/www/html &&\
-    wget -O jorani.tar.gz https://github.com/bbalet/jorani/releases/download/v0.6.5/jorani-0.6.5.zip &&\
+    wget -O jorani.tar.gz https://github.com/bbalet/jorani/releases/download/v1.0.0/jorani-1.0.0.zip &&\
     unzip jorani.tar.gz &&\
     mv jorani /var/www/html &&\
     a2enmod rewrite &&\
