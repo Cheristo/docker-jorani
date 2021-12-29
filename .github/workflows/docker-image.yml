@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag cheristo/jorani:$(date +%s)
       
     - name: Docker Push
-      run: docker push cheristo/jorani:latest
+      run: docker push cheristo/jorani:v1
