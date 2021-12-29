@@ -8,7 +8,8 @@ RUN apt-get -qq update > /dev/null &&\
     # Jorani installation
     rm -Rf /var/www/html &&\
     wget -O jorani.tar.gz https://github.com/bbalet/jorani/releases/download/v1.0.0/jorani-1.0.0.zip &&\
-    unzip jorani.tar.gz &&\
+    mkdir /jorani
+    unzip jorani.tar.gz -d /jorani &&\
     mv jorani /var/www/html &&\
     a2enmod rewrite &&\
     docker-php-ext-install pdo_mysql &&\
