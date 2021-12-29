@@ -1,4 +1,4 @@
-# docker-jorani
+# docker-jorani updated to 1.0
 
 Environment variables
 
